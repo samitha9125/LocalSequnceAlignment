@@ -14,21 +14,21 @@ LocalSequnceAlignment.java file contains some functions which can be used to che
 
 # Example
 
-public static void main(String args[])
-{
-    //-----  Parameters -----//
-    int match = 2;
-    int mismatch = -1;
-    int gap = -2;
+    public static void main(String args[])
+    {
+        //-----  Parameters -----//
+        int match = 2;
+        int mismatch = -1;
+        int gap = -2;
     
-    //----- DNA Sequences -----//
-    String dna1 = "agc";
-    String dna2 = "aaac";
+        //----- DNA Sequences -----//
+        String dna1 = "agc";
+        String dna2 = "aaac";
+
+        //----- Sequence Algorithm Initialization -----//
+        LocalSequenceAlignment LSL = new LocalSequenceAlignment(dna1,dna2,match,mismatch,gap);
+
+        //----- Runners -----//
+        LSL.runner();
     
-    //----- Sequence Algorithm Initialization -----//
-    LocalSequenceAlignment LSL = new LocalSequenceAlignment(dna1,dna2,match,mismatch,gap);
-    
-    //----- Runners -----//
-    LSL.runner();
-    
-}
+    }
