@@ -12,6 +12,8 @@ LocalSequnceAlignment.java file contains some functions which can be used to che
 
 `runner()` function can be called from the Main function after initialize the object correctly.
 
+Before the initialization, adjust values for match,mismatch and gap penalty.
+
 # Example
 
     public static void main(String args[])
